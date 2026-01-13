@@ -1,0 +1,79 @@
+.books-section {
+    padding: 8rem 0;
+    background-color: var(--bg-secondary);
+}
+
+.book-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    align-items: center;
+}
+
+.book-image {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.book-image:hover {
+    transform: translateY(-5px);
+}
+
+.book-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.book-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.book-desc {
+    font-family: var(--font-main);
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.book-link {
+    color: var(--accent);
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.book-link:hover {
+    border-bottom-color: var(--accent);
+    opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+    .book-row {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        text-align: left;
+    }
+
+    .book-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .book-content {
+        text-align: left;
+        padding: 0;
+    }
+
+    .book-row.reverse .book-content {
+        text-align: right;
+    }
+}

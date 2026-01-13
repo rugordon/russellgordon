@@ -1,0 +1,71 @@
+.signup-section {
+    position: relative;
+    padding: 8rem 0;
+    background: url('/assets/img/bg-signup.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Parallax effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.signup-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.signup-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.signup-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.form-wrapper {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Make iframe responsive */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+    /* Aspect ratio depending on form length, might need adjustment */
+    height: 840px;
+    /* Force height from original code if possible, or use auto */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
