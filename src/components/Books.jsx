@@ -1,18 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Books.css';
+import book1 from '../assets/img/book1.jpg';
+import demoImage2 from '../assets/img/demo-image-02.jpg';
 
 const booksData = [
     {
         title: "Whispers From The Dark",
-        image: "/assets/img/book1.jpg",
+        image: book1,
         description: "Amy Peters is a young girl with a gift and a tragic start in life. Sent away to boarding school she has to fend for herself without anyone to support her. When she arrives at Carisbrooke School in Dorset, one in a growing list of schools, something awakens in the surrounding woods. At the same time something awakens in Amy as well. A power that she doesn't know she possesses.",
         linkText: "You can purchase a copy from Amazon by clicking",
         linkUrl: "https://amzn.to/2yIPw3v"
     },
     {
         title: "Coming Soon!",
-        image: "/assets/img/demo-image-02.jpg",
+        image: demoImage2,
         description: "A sequel to Whispers From The Dark is due in 2026. Follow Russell on social media or send him an email to be notified when this book, or any future work, is published.",
         linkText: null,
         linkUrl: null
